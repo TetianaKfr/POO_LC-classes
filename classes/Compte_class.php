@@ -9,12 +9,12 @@ abstract class Compte
 	 * Titulaire du compt
 	 * @var string
 	 */
-	private $titulaire;
+	protected $titulaire;
 	/**
 	 * Solde du compte
 	 * @var float
 	 */
-	private $solde;
+	protected $solde;
 	
 	//Methodes
 	
@@ -29,7 +29,7 @@ abstract class Compte
 // on attribue le nom a la propriete titulaire de l'instance cree, 
 $this->titulaire = $nomTitulaire;
 $this->solde = $montant;
-		//echo $this->decouvert();
+	
 	}
 /********************************************* */	
 //Accesseurs
@@ -118,24 +118,7 @@ public function retirer(float $montant)
         echo "Montant invalide ou solde insuffisant <br>";
     }
  }
- /***************************************** 
- private function decouvert()
- {
-	if($this ->solde <0){
-			return "Vous etes a decouvert";
-	} else {
-			return "Vous n'etesp as a decouvert";
-	}
-
- }
- /**
- * Méthode magique pour la conversion en chaîne de caractères
- * @return string 
- */
-/**public function __toString()
-{
-    return "Vous visualisez le compte de $this->titulaire, le solde est de $this->solde euros";
-}**************************************************** */
+ 
 
 }
 ?>

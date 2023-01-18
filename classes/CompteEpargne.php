@@ -1,5 +1,5 @@
 <?php 
-class CompteEpargne
+class CompteEpargne extends Compte
 {
 
 }

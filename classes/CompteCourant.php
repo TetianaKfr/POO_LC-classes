@@ -1,9 +1,5 @@
-<?php
-class CompteCourant
+<?php 
+class CompteCourant extends Compte
 {
-	
+
 }
-
-
-
-?>
