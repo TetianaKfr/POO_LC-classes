@@ -1,5 +1,9 @@
 <?php
-require_once '/Applications/MAMP/htdocs/POO_LC/classes/Compte_class.php';
+require_once 'classes/Compte_class.php';
+require_once 'classes/CompteCourant.php';
+require_once 'classes/CompteEpargne.php';
+
+
 
 // On instancie le compte
 $compte1 = new Compte('Benoit');
@@ -38,7 +42,7 @@ $compte2->setSolde("480");
 var_dump($compte2);
 echo "<br>";
 
-echo $compte3->__toString();
+//echo $compte3->__toString();
 
 
 

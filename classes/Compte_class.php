@@ -2,7 +2,7 @@
 /**
  * Classe correspondant a un compte bancaire
  */
-class Compte
+abstract class Compte
 {
 	//Proprietes
 	/**
@@ -118,7 +118,7 @@ public function retirer(float $montant)
         echo "Montant invalide ou solde insuffisant <br>";
     }
  }
- /***************************************** */
+ /***************************************** 
  private function decouvert()
  {
 	if($this ->solde <0){
@@ -132,10 +132,10 @@ public function retirer(float $montant)
  * Méthode magique pour la conversion en chaîne de caractères
  * @return string 
  */
-public function __toString()
+/**public function __toString()
 {
     return "Vous visualisez le compte de $this->titulaire, le solde est de $this->solde euros";
-}
+}**************************************************** */
 
 }
 ?>
