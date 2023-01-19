@@ -24,7 +24,7 @@ abstract class Compte
  * @param string $nomTitulaire Nom du Titulaire
  * @param float $montant
  */
-	public function __construct(string $nomTitulaire, float $montant=100.0)
+	public function __construct(string $nomTitulaire, float $montant)
 	{
 // on attribue le nom a la propriete titulaire de l'instance cree, 
 $this->titulaire = $nomTitulaire;
