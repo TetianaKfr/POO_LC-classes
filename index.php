@@ -1,13 +1,11 @@
 <?php
+
+use App\Autoloader;
 use App\Client\Compte as CompteClient;
 use App\Banque\{CompteCourant, CompteEpargne};
 
-require_once 'classes/Banque/Compte.php';
-require_once 'classes/Banque/CompteCourant.php';
-require_once 'classes/Banque/CompteEpargne.php';
-require_once 'classes/Client/Compte.php';
-
-
+require_once 'classes/Autoloader.php';
+Autoloader::register();
 
 // On instancie le compte
 // On instancie sans préciser le découvert
