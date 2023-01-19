@@ -1,4 +1,5 @@
 <?php
+namespace App\Banque;
 /**
  * Classe correspondant a un compte bancaire
  */
